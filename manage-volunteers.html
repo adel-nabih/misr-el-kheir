@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Donations - Misr El Kheir</title>
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" alt="Misr El Kheir Foundation Logo" width=100px
+                        height=100px></a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="mission.html">About Us</a>
+                        <ul class="dropdown">
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="leadership.html">Leadership Team</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="achievements.html">Programs</a>
+                        <ul class="dropdown">
+                            <li><a href="education.html">Education Initiatives</a></li>
+                            <li><a href="health.html">Healthcare Programs</a></li>
+                            <li><a href="economic.html">Economic Empowerment</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="volunteers.html">Volunteer</a>
+                        <ul class="dropdown">
+                            <li><a href="engagement.html">Engagement</a></li>
+                            <li><a href="overview.html">Achievements</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="One-Time Donation.html" class="donate-button">Donate</a></li>
+                    <li>
+                        <a href="support.html">Contact</a>
+                        <ul class="dropdown">
+                            <li><a href="information.html">Information</a></li>
+                            <li><a href="support.html">Support</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                        <ul class="dropdown">
+                            <li><a href="login.html">User Login</a></li>
+                            <li><a href="adminLogin.html">Admin Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- UnderNav -->
+    <div class="underNav">
+        <h1>Manage Volunteers</h1>
+    </div>
+
+    <!-- Manage Volunteers -->
+    <div id="manage-volunteers">
+        <form id="volunteer-form">
+            <label for="volunteer-name">Volunteer Name</label>
+            <input type="text" id="volunteer-name" required>
+
+            <label for="volunteer-email">Email</label>
+            <input type="email" id="volunteer-email" required>
+
+            <button type="button" onclick="addVolunteer()">Add Volunteer</button>
+        </form>
+
+        <!-- Back to Dashboard Button -->
+        <div class="back-button">
+            <a href="adminDashboard.html">Back to Dashboard</a>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
