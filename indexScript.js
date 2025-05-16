@@ -13,20 +13,18 @@ document.addEventListener("DOMContentLoaded", function () {
         slides[index].classList.add("active");
     }
 
-    // next slide
     function nextSlide() {
         currentIndex = (currentIndex + 1) % slides.length;
         showSlide(currentIndex);
     }
 
-    // previous slide
     function prevSlide() {
         currentIndex = (currentIndex - 1 + slides.length) % slides.length;
         showSlide(currentIndex);
     }
 
     function startSlideshow() {
-        interval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        interval = setInterval(nextSlide, 5000); // change slide every 5 seconds
     }
 
     function stopSlideshow() {

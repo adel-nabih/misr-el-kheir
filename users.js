@@ -1,5 +1,5 @@
+//Not being used anymore
 function registerUser() {
-    // Get form inputs
     const fullname = document.getElementById("fullname").value.trim();
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
@@ -37,20 +37,18 @@ function registerUser() {
         country: country,
     };
 
-    // Retrieve existing users from localStorage
     let users = JSON.parse(localStorage.getItem("users")) || [];
 
-    // Check if the email is already registered
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
     const existingUser = users.find((u) => u.email === email);
     if (existingUser) {
         alert("An account with this email already exists.");
         return;
     }
 
-    // Add the new user to the array
     users.push(user);
 
-    // Save updated user array to localStorage
     localStorage.setItem("users", JSON.stringify(users));
 
     const successMessage = document.getElementById("register-success");
@@ -77,7 +75,7 @@ function loginUser() {
         successMessage.style.display = "block";
 
         setTimeout(() => {
-            window.location.href = "index.html";
+            window.location.href = "index.php";
         }, 2000);
     } else {
         const errorMessage = document.getElementById("login-error");

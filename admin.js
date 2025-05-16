@@ -1,3 +1,7 @@
+//NOT USING THIS PAGE ANYMORE!!!!!!!! replaced with php stuff
+
+
+
 // Check if admin data already exists in localStorage
 if (!localStorage.getItem("admin")) {
     // sample admin 
@@ -25,7 +29,7 @@ function adminLogin() {
         successMessage.style.display = "block";
 
         setTimeout(() => {
-            window.location.href = "adminDashboard.html"; 
+            window.location.href = "adminDashboard.php"; 
         }, 2000);
     } else {
         const errorMessage = document.getElementById("admin-login-error");
@@ -81,7 +85,7 @@ function addDonation() {
 
     alert("Donation added successfully!");
     updateDashboardMetrics();
-    window.location.href = "adminDashboard.html";
+    window.location.href = "adminDashboard.php";
 }
 
 function addVolunteer() {
@@ -102,7 +106,7 @@ function addVolunteer() {
 
     alert("Volunteer added successfully!");
     updateDashboardMetrics(); // Update the dashboard metrics
-    window.location.href = "adminDashboard.html"; // Redirect to dashboard
+    window.location.href = "adminDashboard.php"; // Redirect to dashboard
 }
 
 window.onload = function () {

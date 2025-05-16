@@ -50,3 +50,19 @@
 .card-custom:hover {
     transform: translateY(-5px);
 }
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+}
+.btn-danger {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+h2 {
+    margin-bottom: 20px;
+}

@@ -1,3 +1,7 @@
+//Not using this page anymore!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
 function handleMonthlySubmit() {
     const country = document.getElementById("country").value.trim();
     const email = document.getElementById("email").value.trim();
